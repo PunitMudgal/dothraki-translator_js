@@ -12,8 +12,6 @@ function errorHandler(error){
     console.log("error occured", error);
     alert("Rate limit Exceed, 5 times in an hour");
 }
-console.log(value)
-console.log(input)
 
 function clickHandler(){
     const inputText = textArea.value; // taking input
@@ -27,5 +25,7 @@ function clickHandler(){
     })
     .catch(errorHandler)
 }
+// console.log(value)
+// console.log(input)
 
 translateButton.addEventListener("click", clickHandler)
