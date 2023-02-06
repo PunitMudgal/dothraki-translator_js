@@ -1,7 +1,86 @@
-/* 
-.output-area{
-    width:100vw ;
-    height: 4rem;
-    border: 3px solid orange
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Rowdies&display=swap');
 
-} */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+.main-heading{
+    font-family: 'Rowdies', cursive;
+    margin-bottom: 3rem;
+    text-align: center;
+
+}
+
+/* for large screen  */
+@media screen and (min-width: 420px) {
+    #text-area {
+        display: block;
+      height: 12rem;
+      width: 80%;
+    }
+
+    .output-heading{
+        margin: 4rem auto 4px auto;
+    }
+
+    .output-area{
+        display: block;
+        justify-content: center; 
+        /* margin-left: 6.5rem; */
+        height: 9rem;
+    }
+
+    .translate-btn{
+        padding-inline: 1rem;
+        padding-block: 8px;
+        font-size: larger;
+
+    }
+
+    .main-heading{
+        font-size: 3rem;
+    }
+  }
+
+/* for small (mobile) screen  */
+
+  
+#text-area{
+      width: 80%;
+      height: 3rem;
+      border: 2px solid black;
+      padding: 5px;
+
+  }
+
+.output-area{
+    width:80vw ;
+    height: 9rem;
+    border: 2px solid black;
+    border-radius: 6px;
+
+}
+
+.translator-area{
+   margin-inline: 5vw;
+    
+}
+
+.translate-btn{
+   background-color: darkgreen;
+   color: white;
+   /* padding-inline: 8px;
+   padding-block: 5px; */
+   margin-inline-start: 2rem;
+   border-radius: 5px;
+}
+
+.output-heading{
+    font-family: 'Cinzel Decorative', cursive;
+    margin: 2rem auto 2px auto ;
+    text-align: start;
+}
